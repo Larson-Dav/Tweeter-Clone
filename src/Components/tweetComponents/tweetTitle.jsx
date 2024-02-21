@@ -1,4 +1,4 @@
-export function TweerTitle({Autor, Tag, Date, Icon}){
+export function TweetTitle({Autor, Tag, Date, Icon}){
     return (
         <>
            <div className='tweet-title'>
