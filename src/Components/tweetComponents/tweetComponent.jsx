@@ -4,6 +4,8 @@ import tweetReplies1 from '../tweetComponents/tweetAssets/Tweet-Replies1.png'
 import tweetReplies2 from '../tweetComponents/tweetAssets/Tweet-Replies2.png'
 import tweetReplies3 from '../tweetComponents/tweetAssets/Tweet-Replies3.png'
 import Verified from '../tweetComponents/tweetAssets/Verified.png'
+import { TweetActions } from './tweetActions'
+import { TweerTitle } from './tweetTitle'
 
 export function TweetFragment({innerText, Author, dtTag, dtDate, hasImage, Avatar}){
     return (
@@ -12,22 +14,12 @@ export function TweetFragment({innerText, Author, dtTag, dtDate, hasImage, Avata
           <img className="tweet-avatar" src={Avatar}></img>
             <div className="tweet-content">
                 <div className='tweet-body'>
-                    <div className='tweet-title'>
-                        <p className='tweet-title-author'>{Author} <img  src={Verified}></img></p>
-                        <p className='tweet-title-details'>{dtTag} </p>
-                        <p className='tweet-title-details'>.</p>
-                        <p className='tweet-title-details'>{dtDate}</p>
-                    </div>
+                    <TweerTitle Autor={Author} Tag={dtTag} Date={dtDate} Icon={Verified}></TweerTitle>
                     <div className='tweet-text'>{innerText}</div>
                     {
                         hasImage ? <img className='tweet-image' src={tweetImage}></img> : null
                     }
-                    <div className='tweet-actions'>
-                        <img className='tweet-action' src={tweetReplies}></img>
-                        <img className='tweet-action' src={tweetReplies1}></img>
-                        <img className='tweet-action' src={tweetReplies2}></img>
-                        <img className='tweet-action' src={tweetReplies3}></img>
-                    </div>
+                    <TweetActions Aaction={tweetReplies} Baction={tweetReplies1} Caction={tweetReplies2} Daction={tweetReplies3}></TweetActions>
                 </div>
             </div>
           </div>
