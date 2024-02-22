@@ -2,10 +2,11 @@ export function TweetTitle({Autor, Tag, Date, Icon}){
     return (
         <>
            <div className='tweet-title'>
-                <p className='tweet-title-author'>{Autor} <img  src={Icon}></img></p>
-                <p className='tweet-title-details'>{Tag}</p>
-                <p className='tweet-title-details'>.</p>
-                <p className='tweet-title-details'>{Date}</p>
+                <div className='tweet-title-author'>{Autor}</div>
+                <img  src={Icon}></img>
+                <div className='tweet-title-details'>{Tag}</div>
+                <div className='tweet-title-details'>.</div>
+                <div className='tweet-title-details'>{Date}</div>
             </div> 
         </>
     )

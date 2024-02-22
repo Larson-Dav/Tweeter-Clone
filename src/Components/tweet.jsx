@@ -1,4 +1,3 @@
-import tweetImg from '../assets/Tweet-img.png'
 import { TweetFragment } from './tweetComponents/tweetComponent'
 import tweetAvatar1 from '../Components/tweetComponents/tweetAssets/TP.png'
 import tweetAvatar2 from '../Components/tweetComponents/tweetAssets/Tweet-Profile-Photo.png'
