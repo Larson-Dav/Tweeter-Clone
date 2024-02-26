@@ -15,7 +15,11 @@ const tweetCollection = [
         },
         hasImage: false,
         avatarImage: tweetAvatar1,
-        action: 'cnn'
+        action: {
+            msg: '57',
+            replie: '144',
+            like: '184'
+        }
     },
     {
         innetText: `Gardening boomed during the pandemic. Six Black writers share how it has 
@@ -27,7 +31,11 @@ const tweetCollection = [
         },
         hasImage: true,
         avatarImage: tweetAvatar2,
-        action: 'gard'
+        action: {
+            msg: '19',
+            replie: '48',
+            like: '482'
+        }
     },
     {
         innetText: `BIG NEWS lol jk still Twitter`,
@@ -38,7 +46,11 @@ const tweetCollection = [
         },
         hasImage: false,
         avatarImage: tweetAvatar3,
-        action: 'big'
+        action: {
+            msg: '6.8K',
+            replie: '36.6K',
+            like: '267.1K'
+        }
     },
     {
         innetText: `hello literally everyone`,
@@ -49,7 +61,11 @@ const tweetCollection = [
         },
         hasImage: false,
         avatarImage: tweetAvatar3,
-        action: 'tw'
+        action: {
+            msg: '118.7K',
+            replie: '785.4K',
+            like: '3.3M'
+        }
     },
     {
         innetText: `hello literally everyone`,
@@ -60,7 +76,11 @@ const tweetCollection = [
         },
         hasImage: true,
         avatarImage: tweetAvatar3,
-        action: 'tw'
+        action: {
+            msg: '118.7K',
+            replie: '785.4K',
+            like: '3.3M'
+        }
     }
 ]
 //innerText, Author, dtTag, dtDate, hasImage, Avatar 

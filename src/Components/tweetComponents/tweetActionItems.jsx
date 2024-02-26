@@ -1,10 +1,12 @@
-export function ActionItems({msg,square,love,upload}){
+export function ActionItem({icon,msg,hasText}){
     return (
-        <>
-            <img className='tweet-action' src={msg}></img>
-            <img className='tweet-action' src={square}></img>
-            <img className='tweet-action' src={love}></img>
-            <img className='tweet-action' src={upload}></img>
+        <> 
+            <div className="tweet-action">
+                <img src={icon}></img>
+                {
+                    hasText ? <span>{msg}</span> : null
+                }
+            </div>
         </>
     )
 }
