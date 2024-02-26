@@ -11,8 +11,8 @@ export function TweetContent ({TitleAuthor, TitleTag,TitleDate, TitleIcon, inner
                     {
                         HasImage ? <img className='tweet-image' src={TweetImage}></img> : null
                     }
-                    <TweetActions Type={Action}></TweetActions>
                 </div>
+                <TweetActions Action={Action}></TweetActions>
             </div>
         </>
     )
