@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.dop{
+    width: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 20px;
+}
+
+.nool{
+    size: 20px;
+}
+
+.homeboon{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebutton {
+    text-transform: capitalize;
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    width: 180px;
+    font-size: 1rem;
+}
+
+.oop{
+    width: 265px;
+    height: 630px;
+    background-color: black;
+    margin-left: -100px;
+
+}
+
+.sideinput{
+    width: 270px;
+    margin-left: 0px;
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #202327;
+    background-image: url('./assets/Search.png');
+    background-position: 8px 9px; 
+    background-repeat: no-repeat;
+    text-indent: 30px;
+}
+
+.domain{
+    width: 270px;
+    margin-left: 0px;
+    margin-top: 15px;
+    height: 340px;
+    border: none;
+    border-radius: 10px;
+    background-color: #202327;
+}
+
+.doman{
+    width: 270px;
+    margin-left: 0px;
+    margin-top: 15px;
+    height: 235px;
+    border: none;
+    border-radius: 10px;
+    background-color: #202327;
+}
+
+.dump{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.menu{
+   width: 100px;
+}
+
+.Trends{
+    width: 100%;
+    height: 100vh;
+    margin-right: 30px;
+
+    background-color: #000000;
+}
+ 
+.Trending{
+    width: 97%;
+    height: 45px;
+    background-color: #ffffff00;
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+    padding: 5px;
+}
+ 
+.Trendin{
+    width: 97%;
+    height: 24px;
+    background-color: #ffffff00;
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.flox1{
+    color: #000000;
+    margin: 0;
+}
+.flox2{
+    align-items: end;
+    color: #000000;
+    margin: 0;
+}
+
+.follow{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 50px;
+    padding: 3px;
+    background-color: #ffffff00;
+}
+
+
+.f-btn{
+    border: none;
+    border-radius: 15px;
+    color: #000000;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px 8px 12px;
+}
