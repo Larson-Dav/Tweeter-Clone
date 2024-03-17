@@ -10,43 +10,53 @@ import bookmarks from '../assets/icons/boon.png'
 import list from '../assets/icons/page.png'
 import profile from '../assets/icons/operator.png'
 import more from '../assets/icons/vec.png'
+import { Link } from 'react-router-dom'
 
 const sidebar = [
     {
         text: '',
-        image: tweet
+        image: tweet,
+        link: '/'
     },
     {
         text: 'Home',
-        image: duno
+        image: duno,
+        link: '/'
     },
     {
         text: 'Explore',
-        image: hashtag
+        image: hashtag,
+        link: '/explore'
     },
     {
         text: 'Notifications',
-        image: bell
+        image: bell,
+        link: '/notifications'
     },
     {
         text: 'Messages',
-        image: msgloop
+        image: msgloop,
+        link: 'messages'
     },
     {
         text: 'Bookmarks',
-        image: bookmarks
+        image: bookmarks,
+        link: 'bookmarks'
     },
     {
         text: 'Lists',
-        image: list
+        image: list,
+        link: '/lists'
     },
     {
         text: 'Profile',
-        image: profile
+        image: profile,
+        link: '/myprofile'
     },
     {
         text: 'More',
-        image: more
+        image: more,
+        link: '/more'
     }
 ]
 
@@ -59,7 +69,9 @@ export function Sidebar() {
                     return <>
                         <div className='dop'>
                             <img src={item.image}></img>
-                            <p className='homeboon'>{item.text}</p>
+                            <p className='homeboon'>
+                                <Link to={item.link} style={{ textDecoration: 'none', color: 'white' }}>{item.text}</Link>
+                            </p>
                         </div>
                     </>
                 })
