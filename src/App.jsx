@@ -6,6 +6,8 @@ import { TweetEditor } from './Components/tweet-editor'
 import { Tweet } from './Components/tweet'
 import { Sidebar } from './TrendsComponents/sidebar'
 import { Trends } from './TrendsComponents/trend'
+import { MainLayout } from './LayoutComponents/mainlayout'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -15,9 +17,7 @@ function App() {
         <Sidebar></Sidebar>
       </div>
       <div className='timeline'>
-        <Header>Home</Header>
-        <TweetEditor buttonName='Tweets'></TweetEditor>
-        <Tweet></Tweet>
+        <Outlet />
       </div>
       <div>
         <Trends Class='Trends'></Trends>
