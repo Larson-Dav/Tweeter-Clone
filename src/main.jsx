@@ -4,19 +4,27 @@ import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { MyProfileLayout } from './LayoutComponents/myprofilelayout.jsx'
 import { MainLayout } from './LayoutComponents/mainlayout.jsx'
+import { TweetProfileLayout } from './LayoutComponents/tweetprofilelayout.jsx'
+import { ErrorPage } from './LayoutComponents/errorpage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
-        element: <MainLayout />,
+        element: <MainLayout />
       },
       {
         path: "/myprofile",
         element: <MyProfileLayout />,
+
+      },
+      {
+        path: "profil/:username",
+        element: <TweetProfileLayout />,
       },
     ],
   }

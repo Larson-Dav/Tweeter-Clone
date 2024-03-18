@@ -67,7 +67,7 @@ export function Sidebar() {
             {
                 sidebar.map(function (item) {
                     return <>
-                        <div className='dop'>
+                        <div className='dop' key={item.text}>
                             <img src={item.image}></img>
                             <p className='homeboon'>
                                 <Link to={item.link} style={{ textDecoration: 'none', color: 'white' }}>{item.text}</Link>
