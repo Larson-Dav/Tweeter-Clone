@@ -7,7 +7,7 @@ import { Tweet } from './Components/tweet'
 import { Sidebar } from './TrendsComponents/sidebar'
 import { Trends } from './TrendsComponents/trend'
 import { MainLayout } from './LayoutComponents/mainlayout'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 
 function App() {

@@ -23,6 +23,21 @@ body{
     border-right: 1px solid #2F3336;
 }
 
+.post-profile{
+    padding: 5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2F3336;
+}
+.post-profile-icon{
+    background-color: black; 
+    width: 90px;
+    height: 90px;
+    margin-top: -40px;
+    margin-left: 15px;
+    border-radius: 8px;
+}
 
 .header {
     padding: 1.5rem 1rem;

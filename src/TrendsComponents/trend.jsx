@@ -1,4 +1,5 @@
 import '../boon.css'
+
 import followIconNY from '../assets/fi1.png'
 import followIconCnn from '../assets/fi2.png'
 import followIconTw from '../assets/fi3.png'

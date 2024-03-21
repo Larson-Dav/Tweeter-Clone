@@ -14,6 +14,7 @@ const tweetCollection = [
             ms: '7m'
         },
         hasImage: false,
+        link: 'profil/cnn',
         avatarImage: tweetAvatar1,
         action: {
             msg: '57',
@@ -30,6 +31,7 @@ const tweetCollection = [
             ms: '2h'
         },
         hasImage: true,
+        link: 'profil/nytimes',
         avatarImage: tweetAvatar2,
         action: {
             msg: '19',
@@ -45,6 +47,7 @@ const tweetCollection = [
             ms: 'Oct29'
         },
         hasImage: false,
+        link: 'profil/twitter',
         avatarImage: tweetAvatar3,
         action: {
             msg: '6.8K',
@@ -60,6 +63,7 @@ const tweetCollection = [
             ms: 'Oct4'
         },
         hasImage: false,
+        link: 'profil/twitter',
         avatarImage: tweetAvatar3,
         action: {
             msg: '118.7K',
@@ -75,6 +79,7 @@ const tweetCollection = [
             ms: 'Oct4'
         },
         hasImage: true,
+        link: 'profil/twitter',
         avatarImage: tweetAvatar3,
         action: {
             msg: '118.7K',
@@ -84,23 +89,24 @@ const tweetCollection = [
     }
 ]
 //innerText, Author, dtTag, dtDate, hasImage, Avatar 
-export function Tweet(){
+export function Tweet() {
     return (
         <>
-           <div className="tweets">
-            {
-                tweetCollection.map(function(fragment){
-                    return <TweetFragment key={tweetCollection.indexOf(fragment)} innerText={fragment.innetText} 
-                           Author={fragment.author.title} 
-                           dtTag={fragment.author.tag} 
-                           dtDate={fragment.author.ms}
-                           hasImage={fragment.hasImage}
-                           Avatar={fragment.avatarImage}
-                           Action={fragment.action}>
-                    </TweetFragment>
-                })
-            }
-           </div>
+            <div className="tweets">
+                {
+                    tweetCollection.map(function (fragment) {
+                        return <TweetFragment key={tweetCollection.indexOf(fragment)} innerText={fragment.innetText}
+                            Author={fragment.author.title}
+                            dtTag={fragment.author.tag}
+                            dtDate={fragment.author.ms}
+                            hasImage={fragment.hasImage}
+                            Avatar={fragment.avatarImage}
+                            Action={fragment.action}
+                            link={fragment.link}>
+                        </TweetFragment>
+                    })
+                }
+            </div>
         </>
     )
 }
