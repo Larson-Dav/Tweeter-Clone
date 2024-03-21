@@ -160,3 +160,16 @@
     border: none; 
     background-color: #2c2c2c;
 }
+
+.notification-tabs{
+    padding: 0px 112px 0px 112px;
+    background-color: #ffffff00;
+    border: none;
+    color: #fff;
+}
+.notification-tabs:hover{
+    padding: 0px 112px 0px 112px;
+    background-color: #2c2c2c;
+    border: none;
+    color: #fff;
+}

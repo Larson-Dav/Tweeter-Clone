@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { Header } from "../Components/header";
 import nyt from '../assets/nytimes.png'
 import nytIcon from '../assets/nyticon.png'
@@ -39,18 +39,21 @@ export function TweetProfileLayout() {
                     headImage={currentUserProfile[1].headImage}
                     iconImage={currentUserProfile[1].iconLogo}
                     Title={currentUserProfile[1].title}>
+                    <Outlet />
                 </UserProfilePage> : username == 'nytimes' ? <UserProfilePage
                     postProfile='post-profile'
                     postProfileIcon='post-profile-icon'
                     headImage={currentUserProfile[0].headImage}
                     iconImage={currentUserProfile[0].iconLogo}
                     Title={currentUserProfile[0].title}>
+                    <Outlet />
                 </UserProfilePage> : username == 'twitter' ? <UserProfilePage
                     postProfile='post-profile'
                     postProfileIcon='post-profile-icon'
                     headImage={currentUserProfile[2].headImage}
                     iconImage={currentUserProfile[2].iconLogo}
                     Title={currentUserProfile[2].title}>
+                    <Outlet />
                 </UserProfilePage> : <ErrorPage></ErrorPage>
             }
         </>
