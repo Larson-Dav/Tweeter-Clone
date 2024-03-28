@@ -14,7 +14,7 @@ const tweetCollection = [
             ms: '7m'
         },
         hasImage: false,
-        link: 'profil/cnn',
+        link: 'profil/cnn/posts',
         avatarImage: tweetAvatar1,
         action: {
             msg: '57',
@@ -31,7 +31,7 @@ const tweetCollection = [
             ms: '2h'
         },
         hasImage: true,
-        link: 'profil/nytimes',
+        link: 'profil/nytimes/posts',
         avatarImage: tweetAvatar2,
         action: {
             msg: '19',
@@ -47,7 +47,7 @@ const tweetCollection = [
             ms: 'Oct29'
         },
         hasImage: false,
-        link: 'profil/twitter',
+        link: 'profil/twitter/posts',
         avatarImage: tweetAvatar3,
         action: {
             msg: '6.8K',
@@ -63,7 +63,7 @@ const tweetCollection = [
             ms: 'Oct4'
         },
         hasImage: false,
-        link: 'profil/twitter',
+        link: 'profil/twitter/posts',
         avatarImage: tweetAvatar3,
         action: {
             msg: '118.7K',
@@ -79,7 +79,7 @@ const tweetCollection = [
             ms: 'Oct4'
         },
         hasImage: true,
-        link: 'profil/twitter',
+        link: 'profil/twitter/posts',
         avatarImage: tweetAvatar3,
         action: {
             msg: '118.7K',

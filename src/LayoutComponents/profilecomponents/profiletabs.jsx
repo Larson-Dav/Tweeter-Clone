@@ -1,5 +1,6 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import '../../boon.css'
+import '../../main.css'
 
 export function ProfileTabs() {
     const location = useLocation()
@@ -8,41 +9,40 @@ export function ProfileTabs() {
     const navig = useNavigate()
     return (
         <>
-            <div style={{ backgroundColor: '#000000', width: '100%', height: '50px', display: 'flex', justifyContent: 'center', borderBottom: '1px solid gray' }}>
+            <div className='profile-tab-container'>
                 <button className='twitter-profile-btn' onClick={() => navig('posts')}>
                     Posts
                     {
-                        currentTab == 'posts' ? <hr style={{ height: '5px', backgroundColor: '#1D9BF0', border: 'none', borderRadius: '2.5px' }} /> :
-                            <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
+                        currentTab == 'posts' ? <hr className='line-focus' /> :
+                            <hr className='line-not-focus' />
                     }
                 </button>
                 <button className='twitter-profile-btn' onClick={() => navig('replies')}>
                     Replies
                     {
-                        currentTab == 'replies' ? <hr style={{ height: '5px', backgroundColor: '#1D9BF0', border: 'none', borderRadius: '2.5px' }} /> :
-                            <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
+                        currentTab == 'replies' ? <hr className='line-focus' /> :
+                            <hr className='line-not-focus' />
                     }
-                    <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
                 </button>
                 <button className='twitter-profile-btn' onClick={() => navig('highlights')}>
                     HighLights
                     {
-                        currentTab == 'highlights' ? <hr style={{ height: '5px', backgroundColor: '#1D9BF0', border: 'none', borderRadius: '2.5px' }} /> :
-                            <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
+                        currentTab == 'highlights' ? <hr className='line-focus' /> :
+                            <hr className='line-not-focus' />
                     }
                 </button>
                 <button className='twitter-profile-btn' onClick={() => navig('medias')}>
                     Medias
                     {
-                        currentTab == 'medias' ? <hr style={{ height: '5px', backgroundColor: '#1D9BF0', border: 'none', borderRadius: '2.5px' }} /> :
-                            <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
+                        currentTab == 'medias' ? <hr className='line-focus' /> :
+                            <hr className='line-not-focus' />
                     }
                 </button>
                 <button className='twitter-profile-btn' onClick={() => navig('likes')}>
                     Likes
                     {
-                        currentTab == 'likes' ? <hr style={{ height: '5px', backgroundColor: '#1D9BF0', border: 'none', borderRadius: '2.5px' }} /> :
-                            <hr style={{ height: '5px', backgroundColor: '#ffffff00', border: 'none', borderRadius: '2.5px' }} />
+                        currentTab == 'likes' ? <hr className='line-focus' /> :
+                            <hr className='line-not-focus' />
                     }
                 </button>
             </div >

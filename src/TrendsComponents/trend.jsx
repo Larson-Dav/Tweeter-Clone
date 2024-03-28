@@ -11,58 +11,58 @@ export function Trends({ Class }) {
             <div className='domain'>
                 <div className='Trendin'>
                     <div className='flox1'>
-                        <h2 style={{ color: 'white', fontSize: '16px', margin: '3px' }}>Trends for you</h2>
+                        <h2 className='trends-main-title'>Trends for you</h2>
                     </div>
                     <div className='flox2'>⚙️ </div>
                 </div>
                 <div className='Trending'>
                     <div className='flox1'>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>Trending in Turkey</p>
-                        <h2 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>#SQUID</h2>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>2066 Tweets</p>
+                        <p className='trends-main-content-subtitle'>Trending in Turkey</p>
+                        <h2 className='trends-main-content-title'>#SQUID</h2>
+                        <p className='trends-main-content-tweets'>2066 Tweets</p>
                     </div>
-                    <div className='flox2'><p style={{ color: 'GrayText', fontSize: '19px', margin: '1px' }}>...   </p></div>
+                    <div className='flox2'><p className='trends-main-content-dot'>...   </p></div>
                 </div>
                 <div className='Trending'>
                     <div className='flox1'>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>Trending in Turkey</p>
-                        <h2 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>#SQUID</h2>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>2066 Tweets</p>
+                        <p className='trends-main-content-subtitle'>Trending in Turkey</p>
+                        <h2 className='trends-main-content-title'>#SQUID</h2>
+                        <p className='trends-main-content-tweets'>2066 Tweets</p>
                     </div>
-                    <div className='flox2'><p style={{ color: 'GrayText', fontSize: '19px', margin: '1px' }}>...   </p></div>
+                    <div className='flox2'><p className='trends-main-content-dot'>...   </p></div>
                 </div>
                 <div className='Trending'>
                     <div className='flox1'>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>Trending in Turkey</p>
-                        <h2 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>#SQUID</h2>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>2066 Tweets</p>
+                        <p className='trends-main-content-subtitle'>Trending in Turkey</p>
+                        <h2 className='trends-main-content-title'>#SQUID</h2>
+                        <p className='trends-main-content-tweets'>2066 Tweets</p>
                     </div>
-                    <div className='flox2'><p style={{ color: 'GrayText', fontSize: '19px', margin: '1px' }}>...   </p></div>
+                    <div className='flox2'><p className='trends-main-content-dot'>...   </p></div>
                 </div>
                 <div className='Trending'>
                     <div className='flox1'>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>Trending in Turkey</p>
-                        <h2 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>#SQUID</h2>
-                        <p style={{ color: 'GrayText', fontSize: '10px', margin: '1px' }}>2066 Tweets</p>
+                        <p className='trends-main-content-subtitle'>Trending in Turkey</p>
+                        <h2 className='trends-main-content-title'>#SQUID</h2>
+                        <p className='trends-main-content-tweets'>2066 Tweets</p>
                     </div>
-                    <div className='flox2'><p style={{ color: 'GrayText', fontSize: '19px', margin: '1px' }}>...   </p></div>
+                    <div className='flox2'><p className='trends-main-content-dot'>...   </p></div>
                 </div>
                 <div className='Trendin'>
                     <div className='flox1'>
-                        <h2 style={{ color: '#1D9BF0', fontSize: '16px', margin: '3px' }}>Show more</h2>
+                        <h2 className='trends-main-content-showmore'>Show more</h2>
                     </div>
                 </div>
             </div>
             {/* ================================================================================ */}
             <div className='doman'>
-                <h2 style={{ color: '#fff', fontSize: '16px', margin: '3px', padding: '5px' }}>Who to follow</h2>
+                <h2 className='domain-title'>Who to follow</h2>
                 <div className='follow'>
                     <div className='follow-icon'>
                         <img src={followIconNY}></img>
                     </div>
                     <div className='follow-text'>
-                        <h3 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>The New York Times </h3>
-                        <p style={{ color: 'GrayText', fontSize: '13px', margin: '1px' }}>@nytimes</p>
+                        <h3 className='domain-content-title'>The New York Times </h3>
+                        <p className='domain-content-subtitle'>@nytimes</p>
                     </div>
                     <div className='follow-btn'>
                         <button className='f-btn'>follow</button>
@@ -73,8 +73,8 @@ export function Trends({ Class }) {
                         <img src={followIconCnn}></img>
                     </div>
                     <div className='follow-text'>
-                        <h3 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>CNN </h3>
-                        <p style={{ color: 'GrayText', fontSize: '13px', margin: '1px', marginRight: '97px' }}>@CNN</p>
+                        <h3 className='domain-content-title-sec'>CNN </h3>
+                        <p className='domain-content-subtitle-sec'>@CNN</p>
                     </div>
                     <div className='follow-btn'>
                         <button className='f-btn'>follow</button>
@@ -85,14 +85,14 @@ export function Trends({ Class }) {
                         <img src={followIconTw}></img>
                     </div>
                     <div className='follow-text'>
-                        <h3 style={{ color: 'GrayText', fontSize: '13px', margin: '3px' }}>Twitter </h3>
-                        <p style={{ color: 'GrayText', fontSize: '13px', margin: '1px', marginRight: '80px' }}>@Twitter</p>
+                        <h3 className='domain-content-title-third'>Twitter </h3>
+                        <p className='domain-content-subtitle-third'>@Twitter</p>
                     </div>
                     <div className='follow-btn'>
                         <button className='f-btn'>follow</button>
                     </div>
                 </div>
-                <h2 style={{ color: '#1D9BF0', fontSize: '16px', margin: '3px' }}>Show more</h2>
+                <h2 className='domain-content-showmore'>Show more</h2>
             </div>
         </div >
     </>

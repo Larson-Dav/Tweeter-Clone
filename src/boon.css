@@ -173,3 +173,89 @@
     border: none;
     color: #fff;
 }
+.trends-main-title{
+    color: white;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.trends-main-content-subtitle{
+    color: gray;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.trends-main-content-title{
+    color: gray;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.trends-main-content-tweets{
+    color: gray;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.trends-main-content-dot{
+    color: gray;
+    font-size: 19px;
+    margin: 1px;
+}
+
+.trends-main-content-showmore{
+    color: #1D9BF0;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.domain-title{
+    color: #fff;
+    font-size: 16px;
+    margin: 3px;
+    padding: 5px;
+}
+
+.domain-content-title{
+    color: gray;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.domain-content-subtitle{
+    color: gray;
+    font-size: 13px;
+    margin: 1px;
+}
+
+.domain-content-title-sec{
+    color: gray;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.domain-content-subtitle-sec{
+    color: gray;
+    font-size: 13px;
+    margin: 1px;
+    margin-right: 97px;
+}
+
+.domain-content-title-third{
+    color: gray;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.domain-content-subtitle-third{
+    color: gray;
+    font-size: 13px;
+    margin: 1px;
+    margin-right: 80px;
+}
+
+.domain-content-showmore{
+    color: #1D9BF0;
+    font-size: 16px;
+    margin: 3px;
+}
